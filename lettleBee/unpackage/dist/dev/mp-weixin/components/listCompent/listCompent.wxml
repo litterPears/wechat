@@ -1,0 +1,1 @@
+<view class="componentList"><block wx:for="{{listMsg}}" wx:for-item="item" wx:for-index="index" wx:key="id"><view data-event-opts="{{[['tap',[['itemTarket',['$0'],[[['listMsg','id',item.id]]]]]]]}}" class="listItem" bindtap="__e"><icon class="{{['icon-shipin',item.className]}}"></icon><view class="iconWorld">{{item.world}}</view></view></block></view>

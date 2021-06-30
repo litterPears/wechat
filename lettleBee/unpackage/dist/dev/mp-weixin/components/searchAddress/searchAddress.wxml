@@ -1,0 +1,1 @@
+<view class="searchAddress"><view class="searchFor"><icon class="icon iconfont icon-soushuo iconSreach"></icon><input class="inputWorld" type="text" placeholder="请输入商品名称/口味"/></view><view class="address"><icon class="icon iconfont icon-xiaoxi icon-message"></icon><text class="messageText">12</text></view></view>

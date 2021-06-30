@@ -1,0 +1,76 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "小蜜蜂超市"
+			}
+		},
+		{
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "小蜜蜂超市"
+			}
+		},
+		{
+			"path": "pages/car/car",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/classification/classification",
+			"style": {
+				"navigationBarTitleText": "全部分类",
+				"backgroundColor": "#eee",
+				"onReachBottomDistance":50
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "小蜜蜂超市",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#eee",
+		"onReachBottomDistance":50
+		
+	},
+	"tabBar":{
+		"color":"#2C405A",
+		"selectedColor":"#007AFF",
+		"backgroundColor":"#fff",
+		"borderStyle":"black",
+		"list":[
+				{
+					"text":"首页",
+					"pagePath":"pages/home/home",
+					"iconPath":"static/taber/home_no.png",
+					"selectedIconPath":"static/taber/home.png"
+				},
+				{
+					"text":"各地特色",
+					"pagePath":"pages/list/list",
+					"iconPath":"static/taber/tese_no.png",
+					"selectedIconPath":"static/taber/tese.png"
+				},
+				{
+					"text":"购物车",
+					"pagePath":"pages/car/car",
+					"iconPath":"static/taber/car_no.png",
+					"selectedIconPath":"static/taber/car.png"
+				},
+				{
+					"text":"我的",
+					"pagePath":"pages/me/me",
+					"iconPath":"static/taber/me_no.png",
+					"selectedIconPath":"static/taber/me.png"
+				}
+		]
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "小蜜蜂超市",
+  "usingComponents": {
+    "search-address": "/components/searchAddress/searchAddress",
+    "swiper-img": "/components/swiperImg/swiperImg",
+    "list-compent": "/components/listCompent/listCompent",
+    "recommended": "/components/recommended/recommended",
+    "special-offer": "/components/specialOffer/specialOffer",
+    "featured-list": "/components/featuredList/featuredList",
+    "market": "/components/market/market"
+  }
+}
