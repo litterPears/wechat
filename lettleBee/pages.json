@@ -31,6 +31,12 @@
 				"backgroundColor": "#eee",
 				"onReachBottomDistance":50
 			}
+		},
+		{
+			"path": "pages/goodDetails/details",
+			"style": {
+				"navigationBarTitleText": "产品详情"
+			}
 		}
 	],
 	"globalStyle": {

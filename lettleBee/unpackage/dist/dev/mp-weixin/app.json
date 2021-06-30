@@ -4,7 +4,8 @@
     "pages/list/list",
     "pages/car/car",
     "pages/me/me",
-    "pages/classification/classification"
+    "pages/classification/classification",
+    "pages/goodDetails/details"
   ],
   "subPackages": [],
   "window": {

@@ -6,19 +6,19 @@
 			<view class='list right'></view>
 		</view>
 		<view class="featuredList">
-			<view class="listFlat">
+			<view class="listFlat" @click="featureClick">
 				<List></List>
 			</view>
-			<view class="listFlat">
+			<view class="listFlat" @click="featureClick">
 				<List></List>
 			</view>
-			<view class="listFlat">
+			<view class="listFlat" @click="featureClick">
 				<List></List>
 			</view>
-			<view class="listFlat">
+			<view class="listFlat" @click="featureClick">
 				<List></List>
 			</view>
-			<view class="listFlat">
+			<view class="listFlat" @click="featureClick">
 				<List></List>
 			</view>
 		</view>
@@ -35,6 +35,13 @@
 		},
 		components:{
 			List
+		},
+		methods:{
+			featureClick(){
+				wx.navigateTo({
+					url:"/pages/goodDetails/details"
+				})
+			}
 		}
 	}
 	

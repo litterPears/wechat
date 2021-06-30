@@ -11,7 +11,7 @@
 		</view>
 		<view class="classification_right">
 		  <scroll-view class="scrollRight" scroll-y="true" refresher-enabled="true" @scrolltolower="scrolltolower">
-			<view class="goodsLists">
+			<view class="goodsLists" @click="goodDetails">
 				<image class="goodsImgs" src="../../static/images/bg02.jpg" mode="widthFix"></image>
 				<view class="gloodmsg">
 					<view class="goodTitle">泡脚凤爪</view>
@@ -67,6 +67,11 @@
 			},
 			addCartGooods(){
 				EventBus.$emit("aMsg", true);
+			},
+			goodDetails(){
+				wx.navigateTo({
+					url:"/pages/goodDetails/details"
+				})
 			}
 		}
 	}
