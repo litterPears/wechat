@@ -23,6 +23,24 @@
           "pathName": "pages/goodDetails/details",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/car/car",
+          "pathName": "pages/car/car",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/list/list",
+          "pathName": "pages/list/list",
+          "query": "",
+          "scene": null
         }
       ]
     }

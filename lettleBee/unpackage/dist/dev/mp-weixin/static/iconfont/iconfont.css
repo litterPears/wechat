@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 1342249 */
-  src: url('@/static/iconfont/iconfont.woff2?t=1624874992706') format('woff2'),
-       url('@/static/iconfont/iconfont.woff?t=1624874992706') format('woff'),
-       url('@/static/iconfont/iconfont.ttf?t=1624874992706') format('truetype');
+  src: url('@/static/iconfont/iconfont.woff2?t=1625129877125') format('woff2'),
+       url('@/static/iconfont/iconfont.woff?t=1625129877125') format('woff'),
+       url('@/static/iconfont/iconfont.ttf?t=1625129877125') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,42 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fuwupingjia-kefu:before {
+  content: "\e60d";
+}
+
+.icon-fuwudingdanxiangqing-kefu:before {
+  content: "\e6a9";
+}
+
+.icon-location:before {
+  content: "\e60c";
+}
+
+.icon-ren:before {
+  content: "\e61f";
+}
+
+.icon-shouhou:before {
+  content: "\e61a";
+}
+
+.icon-wodequanyi:before {
+  content: "\e87d";
+}
+
+.icon-fenxiang1:before {
+  content: "\e664";
+}
+
+.icon-shouhou1:before {
+  content: "\e66c";
+}
+
+.icon-quanguanlibase_sales_couponManage:before {
+  content: "\e616";
 }
 
 .icon-xiaoxi:before {

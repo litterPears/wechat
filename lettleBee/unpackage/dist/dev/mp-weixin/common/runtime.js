@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/listCompent/listCompent":1,"components/market/market":1,"components/featuredList/featuredList":1,"components/recommended/recommended":1,"components/searchAddress/searchAddress":1,"components/specialOffer/specialOffer":1,"components/swiperImg/swiperImg":1,"components/featuredList/list":1};
+/******/ 		var cssChunks = {"components/listCompent/listCompent":1,"components/featuredList/featuredList":1,"components/market/market":1,"components/recommended/recommended":1,"components/searchAddress/searchAddress":1,"components/specialOffer/specialOffer":1,"components/swiperImg/swiperImg":1,"components/featuredList/list":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/listCompent/listCompent":"components/listCompent/listCompent","components/market/market":"components/market/market","components/featuredList/featuredList":"components/featuredList/featuredList","components/recommended/recommended":"components/recommended/recommended","components/searchAddress/searchAddress":"components/searchAddress/searchAddress","components/specialOffer/specialOffer":"components/specialOffer/specialOffer","components/swiperImg/swiperImg":"components/swiperImg/swiperImg","components/featuredList/list":"components/featuredList/list"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/listCompent/listCompent":"components/listCompent/listCompent","components/featuredList/featuredList":"components/featuredList/featuredList","components/market/market":"components/market/market","components/recommended/recommended":"components/recommended/recommended","components/searchAddress/searchAddress":"components/searchAddress/searchAddress","components/specialOffer/specialOffer":"components/specialOffer/specialOffer","components/swiperImg/swiperImg":"components/swiperImg/swiperImg","components/featuredList/list":"components/featuredList/list"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

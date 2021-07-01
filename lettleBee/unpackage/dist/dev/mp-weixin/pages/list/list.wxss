@@ -1,0 +1,11 @@
+
+.specialDishes{
+	background:#eee;
+	min-height:100vh;
+}
+.specialMaps{
+	width:100%;
+	height:600rpx;
+	backgeround:##d81e06;
+}
+

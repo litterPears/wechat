@@ -43,7 +43,7 @@
 					<view class="label add" @click="addNumber">+</view>
 				</view>
 			</view>
-			<view class="goodBtns">加入购物车</view>
+			<view class="goodBtns" @click="addGoodCart">加入购物车</view>
 		</view>
 	</view>
 </template>
@@ -58,7 +58,15 @@
 				changelab:'请选择口味'
 			}
 		},
+		props:{
+			cloneMark:{
+				type:Boolean,
+				default:false
+			}
+		},
 		mounted(){
+			this.marketTag = this.cloneMark;
+			console.log(this.marketTag,"this.marketTagthis.marketTag");
 			EventBus.$on("aMsg", (msg) => {
 			  this.marketTag = msg
 			}) 
@@ -78,6 +86,11 @@
 			},
 			changeLable(world){
 				this.changelab = world;
+			},
+			addGoodCart(){
+				wx.switchTab({
+					url:"/pages/car/car"
+				})
 			}
 		}
 	}

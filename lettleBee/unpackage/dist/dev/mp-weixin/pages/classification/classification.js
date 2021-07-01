@@ -96,7 +96,7 @@ var components
 try {
   components = {
     market: function() {
-      return Promise.all(/*! import() | components/market/market */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/market/market")]).then(__webpack_require__.bind(null, /*! @/components/market/market.vue */ 89))
+      return __webpack_require__.e(/*! import() | components/market/market */ "components/market/market").then(__webpack_require__.bind(null, /*! @/components/market/market.vue */ 97))
     }
   }
 } catch (e) {

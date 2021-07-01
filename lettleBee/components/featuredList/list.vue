@@ -11,7 +11,7 @@
 					<text class="pay">30.67</text>
 					<view class="presonPay">100+人付款</view>
 				</view>
-				<icon class="icon iconfont icon-cart iconCartadd" @click="addCart"></icon>
+				<icon class="icon iconfont icon-cart iconCartadd" @click.stop="addCart"></icon>
 			</view>
 		</view>
 	</view>

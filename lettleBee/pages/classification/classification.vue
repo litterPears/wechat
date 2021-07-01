@@ -25,7 +25,7 @@
 							<text class="payIcon">￥</text>
 							<text>30</text>
 						</view>
-						<icon class="icon iconfont icon-cart iconCartadd" @click="addCartGooods"></icon>
+						<icon class="icon iconfont icon-cart iconCartadd" @click.stop="addCartGooods"></icon>
 					</view>
 				</view>
 			</view>
