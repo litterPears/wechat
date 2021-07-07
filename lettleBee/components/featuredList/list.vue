@@ -14,20 +14,24 @@
 				<icon class="icon iconfont icon-cart iconCartadd" @click.stop="addCart"></icon>
 			</view>
 		</view>
+		<markets :marketsTag.sync="marketsTag"></markets>
 	</view>
 </template>
 
 <script>
-	import { EventBus } from "../../utils/event-bus.js";
+	import markets from "../market/market.vue"
 	export default{
 		data(){
 			return {
-				
+				marketsTag:false
 			}
+		},
+		components:{
+			markets
 		},
 		methods:{
 			addCart(){
-				EventBus.$emit("aMsg", true);
+				this.marketsTag = true;
 			}
 		}
 	}

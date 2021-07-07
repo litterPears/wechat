@@ -41,6 +41,48 @@
           "pathName": "pages/list/list",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/list/list",
+          "pathName": "pages/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pagesA/myOrder/myOrder",
+          "pathName": "pagesA/myOrder/myOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pagesA/orderDetail/orderDetail",
+          "pathName": "pagesA/orderDetail/orderDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pagesA/myOrder/myOrder",
+          "pathName": "pagesA/myOrder/myOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pagesA/coupon/coupon",
+          "pathName": "pagesA/coupon/coupon",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pagesA/addrerss/addrerss",
+          "pathName": "pagesA/addrerss/addrerss",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pagesA/addAddress/addAddress",
+          "pathName": "pagesA/addAddress/addAddress",
+          "query": "",
+          "scene": null
         }
       ]
     }

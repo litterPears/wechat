@@ -8,31 +8,31 @@
 		</view>
 		<view class="personFlows">
 			<view class="personOrder">
-				<view class='orderList'>
+				<view class='orderList' @click="goOrderList(0)">
 					<text>我的订单</text>
 					<view class='ordermore'>查看更多订单 ></view>
 				</view>
 				<view class='orderflowss'>
-					<view class="orderTab">
+					<view class="orderTab" @click="goOrderList(1)">
 						<view class="orderNum">12</view>
 						<view class='orderIcon'>
 							<icon class="icon iconfont icon-daifukuan iconCloor"></icon>
 						</view>
 						<view class='orderworld'>待支付</view>
 					</view>
-					<view class="orderTab">
+					<view class="orderTab" @click="goOrderList(2)">
 						<view class='orderIcon'>
 							<icon class="icon iconfont icon-daifahuo iconCloor"></icon>
 						</view>
 						<view class='orderworld'>待发货</view>
 					</view>
-					<view class="orderTab">
+					<view class="orderTab" @click="goOrderList(3)">
 						<view class='orderIcon'>
 							<icon class="icon iconfont icon-daishouhuo iconCloor"></icon>
 						</view>
 						<view class='orderworld'>待收货</view>
 					</view>
-					<view class="orderTab">
+					<view class="orderTab" @click="goOrderList(4)">
 						<view class='orderIcon'>
 							<icon class="icon iconfont icon-shouhou iconCloor"></icon>
 						</view>
@@ -41,7 +41,7 @@
 				</view>
 			</view>
 			<view class="orderTabList">
-				<view class="ordergets">
+				<view class="ordergets" @click='couponTarget'>
 					<view class="ordergetsLeft">
 						<icon class="icon iconfont icon-quanguanlibase_sales_couponManage iconcouponManage"></icon>
 						<text>优惠券</text>
@@ -93,7 +93,18 @@
 				
 			}
 		},
-		
+		methods:{
+			goOrderList(num){
+				wx.navigateTo({
+					url:'/pagesA/myOrder/myOrder?numb='+num
+				})
+			},
+			couponTarget(){
+				wx.navigateTo({
+					url:'/pagesA/coupon/coupon'
+				})
+			}
+		}
 	}
 </script>
 

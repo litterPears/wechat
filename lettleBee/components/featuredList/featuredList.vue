@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="mianTemplates">
 		<view class="titles">
 			<view class='list left'></view>
 			<view class="world">精选</view>
@@ -48,9 +48,12 @@
 </script>
 
 <style>
+	.mianTemplates{
+		background:#f8f8f8;
+	}
 	.titles{
-		height:60rpx;
-		line-height:60rpx;
+		height:80rpx;
+		line-height:80rpx;
 		display:flex;
 		justify-content:center;
 		align-items:center;

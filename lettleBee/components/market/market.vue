@@ -1,9 +1,9 @@
 <template>
 	<view>
-		<view class="markbgs" v-show="marketTag"></view>
-		<view class="market" v-show="marketTag">
+		<view class="markbgs" v-show="marketsTag"></view>
+		<view class="market" v-show="marketsTag">
 			<view class="marketClone">
-				<icon class="icon iconfont icon-guanbi1 iconClones" @click="cloneMarket"></icon>
+				<icon class="icon iconfont icon-guanbi1 iconClones" @click.stop="cloneMarket"></icon>
 			</view>
 			<view class="goodsImgs">
 				<view class="goodheets"></view>
@@ -43,37 +43,28 @@
 					<view class="label add" @click="addNumber">+</view>
 				</view>
 			</view>
-			<view class="goodBtns" @click="addGoodCart">加入购物车</view>
+			<view class="goodBtns" @click.stop="addGoodCart">加入购物车</view>
 		</view>
 	</view>
 </template>
 
 <script>
-	import { EventBus } from "../../utils/event-bus.js";
 	export default{
 		data(){
 			return{
-				marketTag:false,
 				payNumber:1,
 				changelab:'请选择口味'
 			}
 		},
 		props:{
-			cloneMark:{
+			marketsTag:{
 				type:Boolean,
 				default:false
 			}
 		},
-		mounted(){
-			this.marketTag = this.cloneMark;
-			console.log(this.marketTag,"this.marketTagthis.marketTag");
-			EventBus.$on("aMsg", (msg) => {
-			  this.marketTag = msg
-			}) 
-		},
 		methods:{
 			cloneMarket(){
-				this.marketTag = false
+				this.$emit('update:marketsTag', false)
 			},
 			deleteNumber(){
 				this.payNumber = this.payNumber - 1;
@@ -88,8 +79,10 @@
 				this.changelab = world;
 			},
 			addGoodCart(){
-				wx.switchTab({
-					url:"/pages/car/car"
+				this.$emit('update:marketsTag', false)
+				wx.showToast({
+					icon:'none',	
+					title:"已加入购物车！"
 				})
 			}
 		}

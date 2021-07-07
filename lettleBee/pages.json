@@ -1,5 +1,5 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ 
 		{
 			"path": "pages/home/home",
 			"style": {
@@ -9,7 +9,7 @@
 		{
 			"path": "pages/list/list",
 			"style": {
-				"navigationBarTitleText": "小蜜蜂超市"
+				"navigationBarTitleText": "特色美味"
 			}
 		},
 		{
@@ -78,5 +78,46 @@
 					"selectedIconPath":"static/taber/me.png"
 				}
 		]
-	}
+	},
+	"subPackages":[{
+		"root":"pagesA",
+		"pages":[
+			{
+				"path": "pageEcharts/pageEcharts",
+				"style": {
+					"navigationBarTitleText": "地图"
+				}
+			},
+			{
+				"path": "myOrder/myOrder",
+				"style": {
+					"navigationBarTitleText": "我的订单"
+				}
+			},
+			{
+				"path": "orderDetail/orderDetail",
+				"style": {
+					"navigationBarTitleText": "订单详情"
+				}
+			},
+			{
+				"path": "coupon/coupon",
+				"style": {
+					"navigationBarTitleText": "优惠券"
+				}
+			},
+			{
+				"path": "addrerss/addrerss",
+				"style": {
+					"navigationBarTitleText": "我的收货地址"
+				}
+			},
+			{
+				"path": "addAddress/addAddress",
+				"style": {
+					"navigationBarTitleText": "添加收货地址"
+				}
+			}
+		]
+	}]
 }

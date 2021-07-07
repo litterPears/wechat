@@ -32,18 +32,17 @@
 		  </scroll-view>
 		</view>
 		<!-- 弹出窗部分 -->
-		<market></market>
+		<market :marketsTag.sync="marketsTag"></market>
 	</view>
 </template>
 
 <script>
 	import { specialList } from '../../utils/json.js'
-	import { EventBus } from "../../utils/event-bus.js"
 	export default{
 		data(){
 			return{
 				listsId:"",
-				marketTag:false,
+				marketsTag:false,
 				list:[]
 			}
 		},
@@ -51,12 +50,7 @@
 			this.listsId = options.itemId;
 		},
 		mounted(){
-			this.list = specialList;
-			//显示弹出窗
-			EventBus.$on("aMsg", (msg) => {
-			  this.marketTag = msg
-			})
-			
+			this.list = specialList;	
 		},
 		methods:{
 			targetList(items){
@@ -66,7 +60,7 @@
 				console.log("12345678");
 			},
 			addCartGooods(){
-				EventBus.$emit("aMsg", true);
+				this.marketsTag = true;
 			},
 			goodDetails(){
 				wx.navigateTo({

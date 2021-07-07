@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/list/list",
+    "pages/car/car",
+    "pages/me/me",
+    "pages/classification/classification",
+    "pages/goodDetails/details"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        "pageEcharts/pageEcharts",
+        "myOrder/myOrder",
+        "orderDetail/orderDetail",
+        "coupon/coupon",
+        "addrerss/addrerss"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小蜜蜂超市",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#eee",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#2C405A",
+    "selectedColor": "#007AFF",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "static/taber/home_no.png",
+        "selectedIconPath": "static/taber/home.png"
+      },
+      {
+        "text": "各地特色",
+        "pagePath": "pages/list/list",
+        "iconPath": "static/taber/tese_no.png",
+        "selectedIconPath": "static/taber/tese.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/car/car",
+        "iconPath": "static/taber/car_no.png",
+        "selectedIconPath": "static/taber/car.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/me/me",
+        "iconPath": "static/taber/me_no.png",
+        "selectedIconPath": "static/taber/me.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

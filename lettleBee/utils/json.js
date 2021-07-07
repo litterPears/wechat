@@ -65,3 +65,173 @@ export const specialList = [
 		className:""
 	}
 ];
+
+export const mymotherland =  [
+	{
+		name: "南海诸岛",
+		value:"hainanzhudao"
+	},
+	{
+		name: '北京',
+		value:"beijin"
+	},
+	{
+		name: '天津',
+		value:'tianjing'
+	},
+	{
+		name: '上海',
+		value:"shanghai"
+		
+	},
+	{
+		name: '重庆',
+		value:"chognqing"
+	},
+	{
+		name: '河北',
+		value:"hebei"
+	},
+	{
+		name: '河南',
+		value:'henan'
+	},
+	{
+		name: '云南',
+		value:"yunnan"
+	},
+	{
+		name: '辽宁',
+		value:'liaoning'
+	},
+	{
+		name: '黑龙江',
+		value:'heilongjiang'
+	},
+	{
+		name: '湖南',
+		value:'hunan'
+	},
+	{
+		name: '安徽',
+		value:'anhui'
+	},
+	{
+		name: '山东',
+		value:'shandong'
+	},
+	{
+		name: '新疆',
+		value:'xinjiang'
+	},
+	{
+		name: '江苏',
+		value:'jiangsu'
+		
+	},
+	{
+		name: '浙江',
+		value:'zhejiang'
+	},
+	{
+		name: '江西',
+		value:'guangxi'
+	},
+	{
+		name: '湖北',
+		value:'hubie'
+	},
+	{
+		name: '广西',
+		value:'guangxi'
+	},
+	{
+		name: '甘肃',
+		value:'gansu'
+	},
+	{
+		name: '山西',
+		value:'shanxi'
+	},
+	{
+		name: '内蒙古',
+		value:'neinenggu'
+	},
+	{
+		name: '陕西',
+		value:'shanxi'
+	},
+	{
+		name: '吉林',
+		value:'jilin'
+	},
+	{
+		name: '福建',
+		value:'fujian'
+	},
+	{
+		name: '贵州',
+		value:'guizhou'
+		
+	},
+	{
+		name: '广东',
+		value:'guangdong'
+	},
+	{
+		name: '青海',
+		value:'qinghai'
+	},
+	{
+		name: '西藏',
+		value:'xizang'
+	},
+	{
+		name: '四川',
+		value:'sichuan'
+	},
+	{
+		name: '宁夏',
+		value:'ningxia'
+	},
+	{
+		name: '海南',
+		value:'hainan'
+	},
+	{
+		name: '台湾',
+		value:'taiwan'
+	},
+	{
+		name: '香港',
+			value:'xiangguang'
+	},
+	{
+		name: '澳门',
+		value:'aomen'
+	}
+]
+
+
+export const orderWorld = [
+	{
+		id:0,
+		world:"全部"
+	},
+	{
+		id:1,
+		world:"待支付"
+	},
+	{
+		id:2,
+		world:"待发货"
+	},
+	{
+		id:3,
+		world:"待收货"
+	},
+	{
+		id:4,
+		world:"售后"
+	},
+]

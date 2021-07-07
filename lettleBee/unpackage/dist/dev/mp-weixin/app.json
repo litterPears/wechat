@@ -7,7 +7,19 @@
     "pages/classification/classification",
     "pages/goodDetails/details"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        "pageEcharts/pageEcharts",
+        "myOrder/myOrder",
+        "orderDetail/orderDetail",
+        "coupon/coupon",
+        "addrerss/addrerss",
+        "addAddress/addAddress"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "小蜜蜂超市",
@@ -47,6 +59,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

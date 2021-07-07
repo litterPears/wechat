@@ -4,8 +4,7 @@
 	min-height:100vh;
 }
 .specialMaps{
-	width:100%;
-	height:600rpx;
-	backgeround:##d81e06;
+	height:780rpx;
+	backgeround:#d81e06;
 }
 

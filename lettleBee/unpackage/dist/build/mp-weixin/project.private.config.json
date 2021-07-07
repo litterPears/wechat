@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pagesA/addrerss/addrerss",
+          "pathName": "pagesA/addrerss/addrerss",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
