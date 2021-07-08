@@ -16,7 +16,9 @@
         "orderDetail/orderDetail",
         "coupon/coupon",
         "addrerss/addrerss",
-        "addAddress/addAddress"
+        "addAddress/addAddress",
+        "searchList/searchList",
+        "message/message"
       ]
     }
   ],

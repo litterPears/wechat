@@ -88,13 +88,26 @@
 		</view>
 		<view class="addressflexDoms"></view>
 		<view class="addressFlex">
-			<view class="addAddress">添加新地址</view>
+			<view class="addAddress" @click="addAddress">添加新地址</view>
 		</view>
 	</view>
 </template>
 
 <script>
-	
+	export default{
+		data(){
+			return{
+				
+			}
+		},
+		methods:{
+			addAddress(){
+				wx.navigateTo({
+					url:"/pagesA/addAddress/addAddress"
+				})
+			}
+		}
+	}
 </script>
 
 <style>

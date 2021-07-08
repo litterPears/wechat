@@ -15,7 +15,10 @@
         "myOrder/myOrder",
         "orderDetail/orderDetail",
         "coupon/coupon",
-        "addrerss/addrerss"
+        "addrerss/addrerss",
+        "addAddress/addAddress",
+        "searchList/searchList",
+        "message/message"
       ]
     }
   ],

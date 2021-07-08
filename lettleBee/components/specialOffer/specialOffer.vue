@@ -2,7 +2,7 @@
 	<view class="specialOffer">
 		<view class="specialTitle">每日特惠</view>
 		<view class="specialList">
-			<view class="lists">
+			<view class="lists" @click="specipay">
 				<image class="imgs" src="../../static/images/icon01.jpg" mode="widthFix"></image>
 				<view class="speciT">香辣小龙虾香辣</view>
 				<view class="speciPays">
@@ -11,7 +11,7 @@
 					<view class="iconolds">￥5</view>
 				</view>
 			</view>
-			<view class="lists">
+			<view class="lists" @click="specipay">
 				<image class="imgs" src="../../static/images/icon01.jpg" mode="widthFix"></image>
 				<view class="speciT">香辣小龙虾香辣</view>
 				<view class="speciPays">
@@ -20,7 +20,7 @@
 					<view class="iconolds">￥5</view>
 				</view>
 			</view>
-			<view class="lists">
+			<view class="lists" @click="specipay">
 				<image class="imgs" src="../../static/images/icon01.jpg" mode="widthFix"></image>
 				<view class="speciT">香辣小龙虾香辣</view>
 				<view class="speciPays">
@@ -29,7 +29,7 @@
 					<view class="iconolds">￥5</view>
 				</view>
 			</view>
-			<view class="lists">
+			<view class="lists" @click="specipay">
 				<image class="imgs" src="../../static/images/icon01.jpg" mode="widthFix"></image>
 				<view class="speciT">香辣小龙虾香辣</view>
 				<view class="speciPays">
@@ -38,7 +38,7 @@
 					<view class="iconolds">￥5</view>
 				</view>
 			</view>
-			<view class="lists">
+			<view class="lists" @click="specipay">
 				<image class="imgs" src="../../static/images/icon01.jpg" mode="widthFix"></image>
 				<view class="speciT">香辣小龙虾香辣</view>
 				<view class="speciPays">
@@ -52,6 +52,20 @@
 </template>
 
 <script>
+	export default{
+		data(){
+			return{
+				
+			}
+		},
+		methods:{
+			specipay(){
+				wx.navigateTo({
+					url:"/pages/goodDetails/details"
+				})
+			}
+		}
+	}
 </script>
 
 <style>

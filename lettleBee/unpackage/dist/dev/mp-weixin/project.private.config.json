@@ -83,6 +83,18 @@
           "pathName": "pagesA/addAddress/addAddress",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pagesA/searchList/searchList",
+          "pathName": "pagesA/searchList/searchList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pagesA/message/message",
+          "pathName": "pagesA/message/message",
+          "query": "",
+          "scene": null
         }
       ]
     }

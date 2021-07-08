@@ -51,7 +51,7 @@
 						<icon class="icon iconfont icon-more jiantous"></icon>
 					</view>
 				</view>
-				<view class="ordergets">
+				<view class="ordergets" @click='addressTarget'>
 					<view class="ordergetsLeft">
 						<icon class="icon iconfont icon-location iconcouponManage"></icon>
 						<text>收货地址管理</text>
@@ -61,7 +61,7 @@
 						<icon class="icon iconfont icon-more jiantous"></icon>
 					</view>
 				</view>
-				<view class="ordergets">
+				<view class="ordergets" @click="ordergetst">
 					<view class="ordergetsLeft">
 						<icon class="icon iconfont icon-fuwupingjia-kefu iconcouponManage"></icon>
 						<text>联系客服</text>
@@ -71,16 +71,14 @@
 						<icon class="icon iconfont icon-more jiantous"></icon>
 					</view>
 				</view>
-				<!-- <view class="ordergets">
-					<view class="ordergetsLeft">
-						<icon class="icon iconfont icon-quanguanlibase_sales_couponManage iconcouponManage"></icon>
-						<text>优惠券</text>
-					</view>
-					<view class="ordergetsRight">
-						<view></view>
-						<icon class="icon iconfont icon-more jiantous"></icon>
-					</view>
-				</view> -->
+			</view>
+		</view>
+		<view v-show="markpreson">
+			<view class="mypersonsmark" @click="deleteMark"></view>
+			<view class="mypersonflexs">
+				<view class="flexeds bodernones">客服电话：1534596</view>
+				<view class="flexeds">在线客服</view>
+				<view class="flexeds" @click="deleteMark">取消</view>
 			</view>
 		</view>
 	</view>
@@ -90,7 +88,7 @@
 	export default{
 		data(){
 			return{
-				
+				markpreson:false
 			}
 		},
 		methods:{
@@ -103,6 +101,18 @@
 				wx.navigateTo({
 					url:'/pagesA/coupon/coupon'
 				})
+			},
+			addressTarget(){
+				wx.navigateTo({
+					url:'/pagesA/addrerss/addrerss'
+				})
+			},
+			ordergetst(){
+				console.log("123");
+				this.markpreson = true
+			},
+			deleteMark(){
+				this.markpreson = false
 			}
 		}
 	}
@@ -272,5 +282,38 @@
 	}
 	.ordergets:last-child{
 		border-bottom:none;
+	}
+	.mypersonsmark{
+		width:100%;
+		height:100%;
+		background:#999;
+		opacity:0.5;
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:999;
+	}
+	.mypersonflexs{
+		position:fixed;
+		bottom:0;
+		left:0;
+		z-index:10000;
+		width:100%;
+		background:#fff;
+		min-height:80rpx;
+		border-top-left-radius:20rpx;
+		border-top-right-radius:20rpx;
+		box-shadow:0 -5rpx 8rpx #eee;
+	}
+	.flexeds{
+		height:80rpx;
+		line-height:80rpx;
+		font-size:26rpx;
+		color:#1296db;
+		text-align:center;
+		border-top:1rpx solid #eee;
+	}
+	.bodernones{
+		border:none;
 	}
 </style>

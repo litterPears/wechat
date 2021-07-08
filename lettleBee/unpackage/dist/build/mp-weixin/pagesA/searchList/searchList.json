@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "小蜜蜂超市",
+  "usingComponents": {
+    "featured-list": "/components/featuredList/featuredList"
+  }
+}

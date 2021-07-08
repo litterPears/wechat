@@ -8,17 +8,17 @@
 		:autoplay="autoplay"
 		:circular="circular">
 			<swiper-item>
-				<view class="swiperImg">
+				<view class="swiperImg" @click="swiperclick">
 					<image src="../../static/images/bg04.jpg" mode="widthFix"></image>
 				</view>
 			</swiper-item>
 			<swiper-item>
-				<view class="swiperImg">
+				<view class="swiperImg" @click="swiperclick">
 					<image src="../../static/images/bg09.jpg" mode="widthFix"></image>
 				</view>
 			</swiper-item>
 			<swiper-item>
-				<view class="swiperImg">
+				<view class="swiperImg" @click="swiperclick">
 					<image src="../../static/images/bg06.jpg" mode="widthFix"></image>
 				</view>
 			</swiper-item>
@@ -34,6 +34,13 @@
 				autoplay:true,
 				circular:true,
 				
+			}
+		},
+		methods:{
+			swiperclick(){
+				wx.navigateTo({
+					url:"/pages/goodDetails/details"
+				})
 			}
 		}
 	}

@@ -207,4 +207,37 @@
 .ordergets:last-child{
 	border-bottom:none;
 }
+.mypersonsmark{
+	width:100%;
+	height:100%;
+	background:#999;
+	opacity:0.5;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:999;
+}
+.mypersonflexs{
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:10000;
+	width:100%;
+	background:#fff;
+	min-height:80rpx;
+	border-top-left-radius:20rpx;
+	border-top-right-radius:20rpx;
+	box-shadow:0 -5rpx 8rpx #eee;
+}
+.flexeds{
+	height:80rpx;
+	line-height:80rpx;
+	font-size:26rpx;
+	color:#1296db;
+	text-align:center;
+	border-top:1rpx solid #eee;
+}
+.bodernones{
+	border:none;
+}
 

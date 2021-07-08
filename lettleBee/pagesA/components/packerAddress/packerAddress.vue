@@ -8,9 +8,10 @@
 		:value="att"
 		@change="changeslist"
 		@columnchange="columnchangeList">
-			{{cityDataList[0][att[0]].name}}
+		{{cityList[0]}} {{cityList[1] || ''}} {{cityList[2] || ''}}
+			<!-- {{cityDataList[0][att[0]].name}}
 			{{cityDataList[1][att[1]].name}} 
-			{{cityDataList[2][att[2]].name}}
+			{{cityDataList[2][att[2]].name}} -->
 		</picker>
 		<!-- <picker mode="region" @change="columnchanges">
 			<view>{{ timetext }} </view>
@@ -25,7 +26,7 @@
 			return {
 				att:[0,0,0],
 				cityDataList:[],
-				cityList:[]
+				cityList:['请选择所在的城市','','']
 			}
 		},
 		onLoad() {

@@ -3,11 +3,11 @@
 		<view class="adddressUls">
 			<view class="addAddressName">
 				<lable class="labelName">收货人</lable>
-				<input class="addressInput" type="text" placeholder="名字"/>
+				<input class="addressInput" type="text" placeholder="请输入填写收货人的姓名"/>
 			</view>
 			<view class="addAddressName">
 				<lable class="labelName">手机号码</lable>
-				<input class="addressInput" type="number" placeholder="手机号"/>
+				<input class="addressInput" type="number" placeholder="请输入填写正确的手机号"/>
 			</view>
 			<view class="addAddressName addressregion">
 				<view class='regionlabel'>
@@ -16,7 +16,16 @@
 				</view>
 				<icon class="icon iconfont icon-more iconRight"></icon>
 			</view>
+			<view class="addressFlows">
+				<lable class="labelName">详细地址</lable>
+				<textarea class="textareaT" placeholder-class="placeHolderClass" placeholder="请填写详细地址"></textarea>
+			</view>
 		</view>
+		<view class="changethis">
+			<text>设为默认地址</text>
+			<switch :checked="checkedTag" color="#d81e06" @change="switch1Change"/>
+		</view>
+		<button type="warn" class="buttons">保存</button>
 	</view>
 </template>
 
@@ -25,7 +34,7 @@
 	export default{
 		data(){
 			return{
-			
+				checkedTag:false
 			}
 		},
 		components:{
@@ -84,5 +93,34 @@
 	}
 	.iconRight{
 		font-size:28rpx;
+	}
+	.addressFlows{
+		display:flex;
+		justify-content:flex-start;
+		height:170rpx;
+		padding:30rpx 0 0 0;
+	}
+	.textareaT{
+		width:calc(100% - 140rpx);
+		height:120rpx;
+		font-size:26rpx;
+		color:#000;
+		padding:3rpx 10rpx 10rpx 0;
+	}
+	.changethis{
+		margin-top:30rpx;
+		height:120rpx;
+		lin-height:120rpx;
+		padding:0 25rpx;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		font-size:26rpx;
+		color:#333;
+		background:#fff;
+	}
+	.buttons{
+		margin:100rpx 40rpx 0 40rpx;
+		border-radius:35rpx;
 	}
 </style>

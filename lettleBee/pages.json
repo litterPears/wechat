@@ -117,6 +117,18 @@
 				"style": {
 					"navigationBarTitleText": "添加收货地址"
 				}
+			},
+			{
+				"path": "searchList/searchList",
+				"style": {
+					"navigationBarTitleText": "小蜜蜂超市"
+				}
+			},
+			{
+				"path": "message/message",
+				"style": {
+					"navigationBarTitleText": "我的消息"
+				}
 			}
 		]
 	}]
